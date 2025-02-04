@@ -7,6 +7,7 @@ import Feature from './Feature';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
 import ShowreelModal from '../pages/Showreel';
+import TechMarquee from './TechM';
 
 const ModernWebsite = () => {
   return (
@@ -16,6 +17,7 @@ const ModernWebsite = () => {
 
       {/* Hero Section with Gradient Morph */}
   <Hero/> 
+  <TechMarquee/>
         
         {/* Animated Background Elements */}
       

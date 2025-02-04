@@ -9,19 +9,19 @@ const Contact = () => {
       id: 1,
       icon: <FaPhone className="w-6 h-6 text-cyan-500" />,
       label: 'Call Us',
-      value: '+1 (555) 123-4567',
+      value: '+92 (328) 8768783',
     },
     {
       id: 2,
       icon: <FaEnvelope className="w-6 h-6 text-cyan-500" />,
       label: 'Email Us',
-      value: 'hello@yourcompany.com',
+      value: 'zuhaib.zul@gmail.com',
     },
     {
       id: 3,
       icon: <FaMapMarkerAlt className="w-6 h-6 text-cyan-500" />,
       label: 'Visit Us',
-      value: '123 Innovation Blvd, Tech City, USA',
+      value: 'Colony no 3 , near multani darbar , khanewal',
     },
   ];
 
@@ -65,12 +65,15 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="bg-zinc-800/50 backdrop-blur-lg p-8 rounded-3xl space-y-6"
+          method='POST'
+          action='https://formsubmit.co/zuhaib.zul@gmail.com'
           >
             {/* Name Field */}
             <div>
               <label className="block text-sm text-zinc-400 mb-2">Your Name</label>
               <input
                 type="text"
+                name='name'
                 className="w-full bg-zinc-900/50 border border-zinc-700 rounded-xl px-4 py-3 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
                 placeholder="Enter your name"
               />
@@ -79,7 +82,9 @@ const Contact = () => {
             {/* Email Field */}
             <div>
               <label className="block text-sm text-zinc-400 mb-2">Your Email</label>
+              
               <input
+              name='email'
                 type="email"
                 className="w-full bg-zinc-900/50 border border-zinc-700 rounded-xl px-4 py-3 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
                 placeholder="Enter your email"
@@ -90,6 +95,7 @@ const Contact = () => {
             <div>
               <label className="block text-sm text-zinc-400 mb-2">Your Message</label>
               <textarea
+              name='message'
                 className="w-full bg-zinc-900/50 border border-zinc-700 rounded-xl px-4 py-3 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
                 rows="4"
                 placeholder="Enter your message"

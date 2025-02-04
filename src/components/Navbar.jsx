@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-          NexusWeb
+          PixalPerfect
         </Link>
 
         {/* Desktop Navigation Links */}
