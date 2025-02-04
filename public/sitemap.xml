@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Static Pages -->
+  <url>
+    <loc>https://nexusweb-lake.vercel.app/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://nexusweb-lake.vercel.app/Work</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nexusweb-lake.vercel.app/Blog</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://nexusweb-lake.vercel.app/post/1</loc>
+    <lastmod>2024-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://nexusweb-lake.vercel.app/post/2</loc>
+    <lastmod>2024-01-01</lastmod>
+  </url>
+  <url>
+    <loc>https://nexusweb-lake.vercel.app/post/3</loc>
+    <lastmod>2024-03-01</lastmod>
+  </url>
+  <url>
+    <loc>https://nexusweb-lake.vercel.app/post/4</loc>
+    <lastmod>2024-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://nexusweb-lake.vercel.app/post/5</loc>
+    <lastmod>2024-01-01</lastmod>
+  </url>
+  <url>
+    <loc>https://nexusweb-lake.vercel.app/post/6</loc>
+    <lastmod>2024-03-01</lastmod>
+  </url>
+  <!-- Add new blog entries here as you create them -->
+</urlset>
