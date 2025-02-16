@@ -30,12 +30,12 @@ const ShowreelModal = ({ isOpen, onClose }) => {
             {/* Modal Title */}
             <h3 className="text-2xl font-bold mb-6 text-cyan-400">Watch Our Showreel</h3>
 
-            {/* Video Embed */}
+            {/* Video Embed (Fixed URL) */}
             <div className="aspect-w-16 aspect-h-9">
               <iframe
                 width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                height="315"
+                src="https://www.youtube.com/embed/DJnaLXs8mQk"
                 title="Showreel"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
