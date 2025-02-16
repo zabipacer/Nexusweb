@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { IoClose } from 'react-icons/io5';
+import { ImSpinner2 } from 'react-icons/im';
 
 const ShowreelModal = ({ isOpen, onClose }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -30,8 +33,13 @@ const ShowreelModal = ({ isOpen, onClose }) => {
             {/* Modal Title */}
             <h3 className="text-2xl font-bold mb-6 text-cyan-400">Watch Our Showreel</h3>
 
-            {/* Video Embed (Fixed URL) */}
-            <div className="aspect-w-16 aspect-h-9">
+            {/* Video Embed with Loading Animation */}
+            <div className="relative w-full aspect-w-16 aspect-h-9">
+              {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-lg">
+                  <ImSpinner2 className="w-10 h-10 text-cyan-400 animate-spin" />
+                </div>
+              )}
               <iframe
                 width="100%"
                 height="315"
@@ -41,6 +49,7 @@ const ShowreelModal = ({ isOpen, onClose }) => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="rounded-lg"
+                onLoad={() => setIsLoading(false)}
               />
             </div>
           </motion.div>
