@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { IoClose } from 'react-icons/io5';
-import ShowreelModal from "../pages/ShowreelModal";
+import ShowreelModal from '../pages/Showreel'
 
 
 const Hero = () => {
