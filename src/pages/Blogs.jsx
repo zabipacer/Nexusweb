@@ -49,7 +49,10 @@ const Header = () => {
         transition={{ delay: 1 }}
       >
         <p className="text-xl text-zinc-400">
+          Impact-Site-Verification: dc07cafe-c57d-4eed-b28b-97398ba53aba
+          
           Dive into our curated collection of insights shaping tomorrow's digital landscape
+         
         </p>
       </motion.div>
     </motion.header>
